@@ -27,7 +27,7 @@ CrawlerFrame:SetScript("OnEvent", function(self, eventName)
 
     if eventName == "ADDON_LOADED" and INITIALIZED == false then
         INITIALIZED = true
-        AuctionCrawler = {}
+        Ankkalinna = {}
     end
 end)
 

@@ -40,9 +40,6 @@ function getPageData()
         local gold = math.floor(buyout / 10000)
         local silver = math.floor((buyout % 10000) / 100)
         local copper = buyout % 100
-        if AuctionCrawler == nil then
-            AuctionCrawler = {}
-        end
-        table.insert(AuctionCrawler, createAuctionObject({item=name, seller=owner, price=buyout, count=count}))
+        table.insert(Ankkalinna, createAuctionObject({item=name, seller=owner, price=buyout, count=count}))
     end
 end
